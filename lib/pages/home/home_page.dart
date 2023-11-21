@@ -154,20 +154,26 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   ),
                   Center(
                     child: Container(
-                      margin: const EdgeInsets.only(left: 70),
+                      margin: const EdgeInsets.only(left: 60),
                       child: Row(
                         children: [
                           ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.blueAccent,
-                              fixedSize: const Size.fromWidth(130),
+                              fixedSize: const Size.fromWidth(150),
                             ),
                             onPressed: () {},
                             child: const Row(
                               children: [
-                                Icon(Icons.facebook),
+                                Icon(
+                                  Icons.facebook,
+                                  color: Colors.white,
+                                ),
                                 SizedBox(width: 10),
-                                Text("Facebook"),
+                                Text(
+                                  "Facebook",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ],
                             ),
                           ),
@@ -177,14 +183,20 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.redAccent,
-                              fixedSize: const Size.fromWidth(130),
+                              fixedSize: const Size.fromWidth(150),
                             ),
                             onPressed: () {},
                             child: const Row(
                               children: [
-                                Icon(Icons.phone),
+                                Icon(
+                                  Icons.phone,
+                                  color: Colors.white,
+                                ),
                                 SizedBox(width: 10),
-                                Text("Phone"),
+                                Text(
+                                  "Phone",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ],
                             ),
                           ),
